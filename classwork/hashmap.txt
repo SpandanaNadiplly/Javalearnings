@@ -1,0 +1,76 @@
+/*Concept Explanation
+- **HashMap**  = Stores data as **Key-Value pairs**
+key = unique identifier (like a primary key in db)
+Value = The actual data 
+O(1) lookups = Instant access by key (extremely fast!)*/
+
+Insustry Analogy : Dictionary or phone book 
+key = word(or person's name )
+value = defination (or phone number)
+find defination instantly by looking up the word!
+
+//1.Creating a Hashmap 
+
+HashMap<String, Integer> studentScores = new HashMap<>();
+Map<String, String> employeeDirectory = new HashMap<>();
+
+
+//2.PUT - Adding elements 
+
+studentScores.put("Alice",95)
+
+//updatimg vlue for existing key 
+studentScores.put("Alice", 100);//updates alices Score
+System.out.println("After update:"+ studentScores)
+
+//3.Get - retrieving values 
+Integer aliceScore = studentScore.get("Alice");
+System.out.println("Alice's score:"+ aliceScore);
+
+//Get with default value if key doesn't exist 
+
+Integer bobScore = studentScores.getOrDefault("Bod",0);
+
+//4.CHECKING EXISTENCE 
+
+boolean hasAlice = studentscores.containsKey("Alice");//true
+Boolean hasScore = sudentScores.containsValue(95);//Alice is now having 100
+
+//5.Removing elements
+
+studentScore.remove("Eve");//remove by Key
+system.out.println("After removing Eve:"+ studentScores)
+
+//remove only if key-value pair matches 
+studentScores.remove("Bob",87);//Remove bob if score is 87
+
+//6.ITERATION - Multiple ways 
+System.out.println("Iterating over keys ")
+Set<String> keys = new HshSet();
+studentScores.keySet()
+
+for(String key:keys){
+    system.out.println("Keys:"+key);
+}
+
+Collection<Integer> values = studentScores.values();
+for(Integer value:values){
+    System.out.println("Value:"+value)
+}
+//
+
+for (Map.Entry<String,Integer>entry: netries){
+    System.out.println(entry.getKey()+"->"+entry.getValue);
+}
+
+//7.SIZE and other operations
+
+int size = studentScore.size();
+boolean empty = studentScores.size();
+......
+
+assignment
+word frequency counter 
+hashmap , string 
+
+input - take the sentence...from there find outh the each word's frequency...need to split sentence based on spaces

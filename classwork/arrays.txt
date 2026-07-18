@@ -1,0 +1,91 @@
+Arrays when are defined by a fixed size ..like i size of an array is 5 
+but we are trying to access 6th element or insert 6th element will give us an error
+
+//E-commerce application 
+public class ShoppingCart{
+    //array with fixed size
+    private Product[] items = new Product[10];
+
+    //good array 
+    private List
+}
+
+//2.Adding Elements 
+Students.add("Alice");
+students.add("Bob");
+stidents.add("Charlie");
+System.out.println("Students:"+students )
+
+aslist converts Elements into list 
+syntax
+List<Type> list = Arrays.asList(elements); 
+ List<String> fruits = Arrays.asList("Apple", "Banana", "Mango");
+
+
+ list.get(index);
+ //Accessing elements 
+ String first = students . get(0);
+ String third = students.get(2);
+ System.out.println(first,third)
+
+ //removing elements 
+//cannot remove elements in arrays but can in list 
+students.remove(1);
+students.remove("Bob");
+System.out.println(students);
+students.removeIf(name -> name.startsWith("F"));
+system.out.println("After removeIf:"+ students)
+
+//checking contents 
+//syntax
+list.contains(element);
+//gives either true or false 
+boolean hasAlice = students.contains("Alice");//true
+
+int index = students.indexOf("Charlie");//1
+
+//Size and capacity -- size is similar to the lenght of the list 
+list.isEmpty();//checks if it is empty 
+
+//Iteration in multiple ways 
+foreach loop
+for (datatype variable : collection) {
+    // code
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> fruits = Arrays.asList("Apple", "Banana", "Mango");
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}
+
+  for (int i = 0; i < fruits.size(); i++) {
+            System.out.println(fruits.get(i));
+  }
+
+  //
+  Iterator<DataType> it = collection.iterator();
+
+while (it.hasNext()) {
+    DataType element = it.next();
+    // Process the element
+}
+
+//Lambda functions are anonymous functions it doesnt have any function name 
+(parameters) -> expression
+
+//clearing the list 
+students.clear()
+
+//Industry example : Course registration sys - as assignments 
+
+every course has a code , name and credits to be assigned ..this should be private {encapsulation}
+defuine one more with course registration sys would enables me to add new course , 
+remove course and display all the course , there is also function called foind course ,for calculating the total
+credits and use all the functions used in todays class 
+ //demonstrate each use case 
